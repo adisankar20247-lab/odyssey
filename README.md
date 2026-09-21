@@ -1,6 +1,6 @@
 ## Local lens
 
-Build affordable Kerala journeys that support verified local homestays, community guides, and craft artisans—with total data transparency.
+Travellers	can't	plan	trips that	are	safe,	affordable	and authentic.
 
 Project Description
 
@@ -35,22 +35,15 @@ Google's Stitch was used to design the ui of the application. AI Studio is used 
 ## Project Links
 
 - **GitHub Repository:** [Link of the GitHub repository](https://github.com/adisankar20247-lab/odyssey.git)
-- **Demo Video:** [Watch Demo](https://) *(Upload your demo video to Google Drive and paste the shareable link here. Max 3 minutes)*
-https://drive.google.com/file/d/1hJY9chn1Cz5lCLZ1tNe1oDLmKKS1Pma6/view?usp=sharing
+- **Demo Video:** [Watch Demo](https://drive.google.com/file/d/1hJY9chn1Cz5lCLZ1tNe1oDLmKKS1Pma6/view?usp=sharing)
 ---
 
-## Proof of Google AI Usage
-> Please include proof of AI integration in the `/proofs` folder.
+# Screenshots
+
+Proof of Google AI Usage
 <img width="1902" height="911" alt="image" src="https://github.com/user-attachments/assets/be74369c-4b4f-4366-867a-eaf71d2de677" />
 
-*Example:*
-- API Usage Logs
-- <img width="400" height="400" alt="Local Lens Logo" src="https://github.com/user-attachments/assets/b024dc92-9feb-4930-83be-736cd0919a98" />
 
-- [Console Dashboard](./proofs/dashboard.png)
-
-## Screenshots
-> Add project screenshots in the `/screenshots` folder.
 
 App Home Screen
 <img width="1918" height="912" alt="image" src="https://github.com/user-attachments/assets/50779820-4622-4aed-9966-14bfaabf0ad4" />
@@ -66,10 +59,10 @@ To run your Local Lens project locally, clone the codebase from your repository,
 
 ```bash
 # 1. Clone the repository
-git clone [https://github.com/github_user_name/repo_name.git](https://github.com/github_user_name/repo_name.git)
+git clone [https://github.com/adisankar20247-lab/odyssey.git]
 
 # 2. Navigate to the project directory
-cd repo_name
+cd odyssey
 
 # 3. Install dependencies
 npm install  # or 'pip install -r requirements.txt'
