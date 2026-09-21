@@ -1,0 +1,6 @@
+{
+  "name": "Local Lens",
+  "description": "Responsible, local-first tourism platform for Kerala, India. Safe, affordable itineraries supporting verified local homestays, guides, artisans, and community providers.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

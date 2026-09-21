@@ -1,0 +1,87 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "User profile with responsible tourism preferences and score",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "email": { "type": "string" },
+        "displayName": { "type": "string" },
+        "photoURL": { "type": "string" },
+        "role": { "type": "string", "enum": ["traveller", "admin"] },
+        "responsiblePoints": { "type": "number" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["id", "email", "role"]
+    },
+    "SavedItinerary": {
+      "title": "SavedItinerary",
+      "description": "User saved responsible travel itinerary for the Kerala corridor",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "title": { "type": "string" },
+        "corridor": { "type": "string" },
+        "score": { "type": "number" },
+        "daysCount": { "type": "number" },
+        "totalBudget": { "type": "number" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["id", "userId", "title", "corridor"]
+    },
+    "ProviderBookmark": {
+      "title": "ProviderBookmark",
+      "description": "Bookmarked verified local provider (homestay, guide, artisan)",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "providerId": { "type": "string" },
+        "providerName": { "type": "string" },
+        "category": { "type": "string" },
+        "location": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "userId", "providerId"]
+    },
+    "CommunityNote": {
+      "title": "CommunityNote",
+      "description": "Community-shared responsible travel tips and corridor notes",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "authorName": { "type": "string" },
+        "location": { "type": "string" },
+        "tipText": { "type": "string" },
+        "category": { "type": "string" },
+        "responsibleImpact": { "type": "string" },
+        "verified": { "type": "boolean" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "userId", "tipText"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "UserProfile",
+      "description": "Private user profile and travel settings"
+    },
+    "/users/{userId}/saved_itineraries/{itineraryId}": {
+      "schema": "SavedItinerary",
+      "description": "User saved itineraries"
+    },
+    "/users/{userId}/bookmarks/{bookmarkId}": {
+      "schema": "ProviderBookmark",
+      "description": "User bookmarked providers"
+    },
+    "/community_notes/{noteId}": {
+      "schema": "CommunityNote",
+      "description": "Public community travel tips and feedback"
+    }
+  }
+}
